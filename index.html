@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <title>Sign-Up Form</title>
   </head>
   <body>
@@ -18,30 +19,61 @@
       </div>
       <div class="right-side">
         <div class="description">
-          <div>This in not a real online service! You know you need something like this in your life to help you realize you deepest dreams.</div>
+          <div>This in not a real online service! You know you need something 
+               like this in your life to help you realize you deepest dreams.</div>
           <div>Sign up <em>now</em> to get started.</div>
-          <div>You <em>know</em> you want to.</div>
+          <div class="para3">You <em>know</em> you want to.</div>
         </div>
         <div class="form-section">
           <form action="" method="">
-            <legend>Let's do this!</legend>
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name" required>
-            <label for="last-name">Last name</label>
-            <input type="text" id="last-name" name="last-name" required>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
-            <label for="phone-number">Phone Number</label>
-            <input type="tel" id="phone-number" name="phone-number">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password">
-            <label for="password-confirm"Confirm Password></label>
-            <input type="text" id="password-confirm" name="password-confirm">
-            <input type="submit" value="Submit">
+            <div class="form-inputs">
+              <legend>Let's do this!</legend>
+              <div class="first-last">
+                <div class="first-name">
+                  <label for="first-name">FIRST NAME</label>
+                  <input type="text" id="first-name" name="first-name" 
+                         title="Enter your first name"  required><span></span>
+                </div>
+                <div class="last-name">
+                  <label for="last-name">LAST NAME</label>
+                  <input type="text" id="last-name" name="last-name" 
+                         title="Enter your last name" required><span></span>
+                </div>
+              </div>
+              <div class="email-tel">
+                <div class="email">
+                  <label for="email">EMAIL</label>
+                  <input type="email" name="email" id="email" 
+                         title="Enter your email address. Example: your@email.com"
+                         required><span></span>
+                </div>
+                <div class="tel">
+                  <label for="phone-number">PHONE NUMBER</label>
+                  <input type="tel" id="phone-number" 
+                         name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" 
+                         title="Enter your phone number. Example: 123-456-789">
+                </div>
+              </div>
+              <div class="password-fields">
+                <div class="pass">
+                  <label for="password">PASSWORD</label>
+                  <input type="password" id="password" name="password" 
+                         title="Enter a password" required><span></span>
+                </div>
+                <div class="pass-confirm">
+                  <label for="password-confirm">CONFIRM PASSWORD</label>
+                  <input type="password" id="password-confirm" 
+                         name="password-confirm" required
+                         title="Confirm the password you have entered"><span></span>
+                </div>
+              </div>
+              <div class="passwords-dont-match">* Passwords do not match</div>
+            </div>
+            <button type="submit">Create Account</button>
           </form>
         </div>
         <div class="log-in-link">
-          <div>Already have an account? Log in</div>
+          <div>Already have an account? <span><a href="">Log in</a></span></div>
         </div>
       </div>
     </div>

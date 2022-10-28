@@ -8,14 +8,13 @@
   src: url(./fonts/Norse-Bold.otf);
 }
 
+body {
+  margin: 0;
+}
+
 .page-layout {
   display: flex;
   flex-direction: row;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .left-side {
@@ -28,21 +27,21 @@
 }
 
 .odin-logo-container {
-  margin-top: 40%;
+  margin-top: 20%;
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 2.5%;
 }
 
 .odin-logo {
-  width: 60px;
+  width: 20%;
   height: auto;
 }
 
 .odin-logo-text {
   font-family: 'ODIN';
-  font-size: calc(4em + 1vw);
+  font-size: 4rem;
   color: white;
   align-self: center;
 }
@@ -50,7 +49,7 @@
 .image-credit, .image-credit a {
   color: white;
   text-align: center;
-  font-size: calc(.3em + 1vw);
+  font-size: .9rem;
   font-weight: 100;
 }
 
@@ -59,5 +58,138 @@
 }
 
 .right-side {
-  width: 60%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(248, 248, 248);
+  margin: auto;
+}
+
+.description {
+  font-weight: 700;
+  margin-bottom: 50px;
+  padding: 0px 20px;
+}
+
+.description div, 
+.description em {
+  font-size: 1rem;
+}
+
+.para3 {
+  margin-top: 30px;
+}
+
+.log-in-link {
+  padding: 0px 30px;
+}
+
+.log-in-link div, .log-in-link a {
+  margin-top: 25px;
+  font-size: .9rem;
+  text-decoration: none;
+}
+
+.log-in-link a {
+  color: #596D48;
+  font-weight: 700;
+}
+
+.form-inputs {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, .15);
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+legend {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: rgb(58, 58, 58);
+  font-weight: 700;
+}
+
+button,
+input {
+  outline: none;
+  font-family: inherit;
+  font-size: 100%;
+  width: 200px;
+  padding: 4px;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  font-size: .9rem;
+}
+
+.first-last, .email-tel, .password-fields {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.first-name, .last-name , .email, .tel, .pass, .pass-confirm {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+label {
+  font-size: .65rem;
+  margin-bottom: 2px;
+  font-weight: 700;
+  color: rgb(78, 78, 78);
+}
+
+button[type="submit"] {
+  margin-left: 30px;
+}
+
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 1px 1px 3px 1px lightgray;
+}
+
+form.submitted input:invalid {
+  border: 1px solid red;
+}
+
+form.submitted input:invalid + span::after {
+  content: 'REQUIRED';
+  color: red;
+  font-size: .65rem;
+  font-weight: 700;
+  position: absolute;
+  bottom: 1.77rem;
+  left: 9rem; 
+}
+
+.passwords-dont-match {
+  position: absolute;
+  font-size: .65rem;
+  color: red;
+  bottom: 1.3rem;
+  opacity: 0;
+}
+
+button {
+  background-color: #596D48;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px 1px lightgray;
+  color: white;
+  font-size: .9rem;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+button:hover {
+  background-color: #698055;
+}
+
+button:active {
+  background-color: #546843;
 }

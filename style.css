@@ -15,6 +15,8 @@ body {
 .page-layout {
   display: flex;
   flex-direction: row;
+  min-height: 100vh;
+  height: auto;
 }
 
 .left-side {
@@ -35,7 +37,7 @@ body {
 }
 
 .odin-logo {
-  width: 20%;
+  width: 70px;
   height: auto;
 }
 
@@ -63,13 +65,12 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: rgb(248, 248, 248);
-  margin: auto;
 }
 
 .description {
   font-weight: 700;
   margin-bottom: 50px;
-  padding: 0px 20px;
+  padding: 10px 20px 0px 20px;
 }
 
 .description div, 
@@ -82,7 +83,7 @@ body {
 }
 
 .log-in-link {
-  padding: 0px 30px;
+  padding: 0px 30px 10px 30px;
 }
 
 .log-in-link div, .log-in-link a {

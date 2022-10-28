@@ -6,6 +6,7 @@ const matchError = document.querySelector('.passwords-dont-match');
 submit.addEventListener('click', () => {
   form.classList.add('submitted');
   /* check whether the passwords match */
-  document.getElementById('password').value === document.getElementById('password-confirm').value ?
+  document.getElementById('password').value === 
+  document.getElementById('password-confirm').value ?
   matchError.style.opacity = 0 : matchError.style.opacity = 1;
 })
